@@ -374,3 +374,9 @@ const bills = [
 ];
 
 // Start coding here
+function calsum (accmulator,currentValue) {
+  return accmulator + currentValue.total
+}
+
+let totalbill = bills.reduce(calsum,0)
+console.log(`Total bill transaction is ${totalbill}`)
